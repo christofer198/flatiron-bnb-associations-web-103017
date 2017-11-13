@@ -3,11 +3,7 @@ class Reservation < ActiveRecord::Base
   belongs_to :guest, :class_name => "User"
   belongs_to :listing
 
-  
+
     self.checkin.strftime('%m/%d/%Y')
     binding.pry
-
-  def checkout
-
-  end
 end
