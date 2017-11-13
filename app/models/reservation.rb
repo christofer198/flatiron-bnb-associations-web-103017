@@ -4,6 +4,7 @@ class Reservation < ActiveRecord::Base
 
   def checkin
     # self.checkin.strftime('%m/%d/%Y')
+    binding.pry
   end
 
   def checkout
