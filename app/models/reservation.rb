@@ -5,5 +5,5 @@ class Reservation < ActiveRecord::Base
 
 
     self.checkin.strftime('%m/%d/%Y')
-    binding.pry
+    # binding.pry
 end
