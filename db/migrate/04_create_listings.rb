@@ -8,5 +8,6 @@ class CreateListings < ActiveRecord::Migration
       t.integer :price
       t.integer :neighborhood_id
       t.integer :user_id
+    end
   end
 end
