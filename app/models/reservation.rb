@@ -4,6 +4,6 @@ class Reservation < ActiveRecord::Base
   belongs_to :listing
 
 
-    self.checkin.strftime('%m/%d/%Y')
+  self.checkin
     # binding.pry
 end
