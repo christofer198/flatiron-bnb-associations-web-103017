@@ -6,6 +6,5 @@ class Listing < ActiveRecord::Base
   has_many :reservations
   has_many :reviews
   has_many :guests, through: :reservations
-  
   #binding.pry
 end
