@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 7) do
+ActiveRecord::Schema.define(version: 8) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 7) do
   create_table "reviews", force: :cascade do |t|
     t.string  "description"
     t.integer "rating"
-    t.integer "user_id"
+    t.integer "guest_id"
     t.integer "reservation_id"
   end
 
