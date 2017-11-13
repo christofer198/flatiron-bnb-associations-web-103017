@@ -3,7 +3,7 @@ class Reservation < ActiveRecord::Base
   belongs_to :listing
 
   def checkin
-    checkin.strftime(''%m/%d/%Y')
+    checkin.strftime('%m/%d/%Y')
   end
 
   def checkout
