@@ -5,7 +5,7 @@ class Listing < ActiveRecord::Base
   # belongs_to :user, through: :reservation
   has_many :reservations
   has_many :reviews
-  has_many :guests, :class_name => 'Reservation'
+  has_many :guests, :class_name => 'Reservation', :foreign_key => 'list_id'
 
   #binding.pry
 end
