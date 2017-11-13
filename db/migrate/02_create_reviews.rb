@@ -5,5 +5,6 @@ class CreateReviews < ActiveRecord::Migration
       t.integer :rating
       t.integer :user_id
       t.integer :reservation_id
+    end
   end
 end
